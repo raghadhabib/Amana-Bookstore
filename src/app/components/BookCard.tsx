@@ -82,7 +82,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1  transition-transform duration-300">
       {/* Book Cover - Clickable */}
       <Link href={`/book/${book.id}`} className="block cursor-pointer">
         <div className="relative h-64 w-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors duration-200">
@@ -124,8 +124,9 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
         {/* Action Buttons */}
         <div className="flex gap-2 mt-4">
           <Link href={`/book/${book.id}`} className="flex-1 cursor-pointer">
-            <button className="w-full px-3 py-2 text-sm border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors duration-200 cursor-pointer">
+            <button className="w-full px-3 py-2 text-sm border border-gray-300 text-gray-700 rounded-md hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-pointer">
               View Details
+              
             </button>
           </Link>
           
